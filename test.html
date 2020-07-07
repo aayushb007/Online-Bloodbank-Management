@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href="reg2.css" rel="stylesheet" type="text/css" media="all">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div class="f-a">	
+	<h3>Registration here</h3>
+    
+<form action="reg2.php" method="POST"  style="background-color: #FFFFFF">
+
+  
+ 
+
+   Your Name:<input type='text' name='name' placeholder="your name" pattern="[a-zA-Z _]{4,15}" title="please enter only character  between 4 to 15 for donor name" required="required">
+   Your bloodbank id:<input type='text' name='bid' placeholder="your bloodbank id"  title="please enter only character  between 4 to 15 for donor name" required="required">
+   Your Phone number:<input type='tel' name='phone' placeholder="Phone No." required="required" pattern="[0-9]{10,11}" title="please enter only numbers between 10 to 11 for mobile no." >
+   Mail id:<input type='email' name='mail' required="yes" placeholder="Email" >
+   Password:><input  type='password'  name='pwd' placeholder="Password"  pattern="[a-zA-Z0-9]{2,10}" title="please enter only character or numbers between 12 to 18 for password" required>
+   Confirm Password:<input type='password' name='cpwd' placeholder="Password"  pattern="[a-zA-Z0-9]{2,10}" title="please enter only character or numbers between 12 to 18 for password" required>
+   Gender: <input type="radio" name="gender" value="male" >male<br><input type="radio" name="gender" value="female">female<br>
+   Birthdate:<input type="date" name="bdate"  required>
+   Blood group:<select name="bg"><option>-Your bloodgroup-</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option></select>
+   City:<select name="city"><option>-Your City-</option><option>Ahmedabad</option><option>Surat</option><option>Banaskantha</option><option>Vadodara</option><option>Porbandar</option><option>Jamnagar</option></select>
+   Address:<input type="text" name="ad" placeholder="Address" required>
+   upload pic:<input type="file" name="file">
+   Capcha:<input type="text" name="cap" />
+<img src="capcha.php" />
+<input type='submit' name='chek' value="REGISTER" >
+	 </form></div>
+	 
+
+</body>
+</html>
